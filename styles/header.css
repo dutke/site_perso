@@ -1,0 +1,66 @@
+/* The navigation bar */
+
+.header {
+    overflow: hidden;
+    background-color: transparent;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    border-bottom: 1px solid transparent;
+    z-index: 1000;
+  }
+  
+  /* Links inside the navbar */
+  .header a {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2em;
+    font-weight: lighter;
+    margin-top: 4.7vh;
+    margin-right: 2.6%;
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .header a:hover {
+    color : #f8a823;
+  }
+
+.header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    height: 11.5vh;
+    width: 19%;
+    margin-top: 2.6vh;
+    margin-left: 0.5%;
+}
+
+.header .logo img {
+  object-fit: scale-down;
+  /* margin-bottom: 75px; */
+  margin-left: 25%;
+}
+  /* Change background on mouse-over */
+  /* .header span:hover {
+    background-size: 0 10px, 100% 10px;
+    text-decoration: underline;
+
+  } */
+
+@media (max-width: 1000px) {
+
+
+  .header a {
+    font-size: 0.8em;
+    margin-right: 10px;
+  }
+  .header .logo {
+    width: 195px;
+    height: 59px;
+  }
+}
