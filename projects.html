@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="styles/panel_timeline.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/index.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+<body>
+
+  <div class="header">
+    <div class="logo">
+        <img src="assets/skull-logo-png.webp">
+    </div>
+    <a href="#contact"><span>CONTACT</span></a>
+    <a href="formation.html">FORMATION</a>
+    <a href="projects.html">PROJECTS</a>
+    <a href="#resume">ABOUT</a>
+  </div>
+
+
+<section id="timeline">
+  
+    <div class="tl-item" style="cursor: pointer;" onclick="openOv(2017)" id="panel_2017">
+      
+      <div class="tl-bg" style="background-image: url(assets/Games.jpg)"></div>
+      
+      <div class="tl-year">
+        <p class="f2 heading--sanSerif">Discord Bot</p>
+      </div>
+  
+      <div class="tl-content">
+        <h1>Lorem ipsum dolor sit</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+      </div>
+  
+    </div>
+  
+    <div class="tl-item" style="cursor:pointer" onclick="openOv(2018)" id="panel_2018">
+      
+      <div class="tl-bg" style="background-image: url(assets/Gear\ Club\ 2/gear_club_unlimited_2.jpg)"></div>
+      
+      <div class="tl-year">
+        <p class="f2 heading--sanSerif">Twitch Bot</p>
+      </div>
+  
+      <div class="tl-content">
+        <h1 class="f3 text--accent ttu">Vestibulum laoreet lorem</h1>
+        <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla sed felis. Morbi sed nisl et arcu.</p>
+      </div>
+  
+    </div>
+  
+    <div class="tl-item" style="cursor:pointer" onclick="openOv(2019)" id="panel_2019">
+      
+      <div class="tl-bg" style="background-image: url(assets/F1-Mobile-Racing-mis-a-jour-les-livrees-2020-dans-le-jeu-1200x900.jpg)"></div>
+      
+      <div class="tl-year">
+        <p class="f2 heading--sanSerif">2019</p>
+      </div>
+  
+      <div class="tl-content">
+        <h1 class="f3 text--accent ttu">Vestibulum laoreet lorem</h1>
+        <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla sed felis. Morbi sed nisl et arcu.</p>
+      </div>
+  
+    </div>
+  
+    <div class="tl-item" style="cursor:pointer" onclick="openOv(2020)" id="panel_2020">
+      
+      <div class="tl-bg" style="background-image: url(assets/MyUniverseMyBaby.jpg)"></div>
+      
+      <div class="tl-year">
+        <p class="f2 heading--sanSerif">2020</p>
+      </div>
+  
+      <div class="tl-content">
+        <h1 class="f3 text--accent ttu">Vestibulum laoreet lorem</h1>
+        <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla sed felis. Morbi sed nisl et arcu.</p>
+      </div>
+  
+    </div>
+
+    <div class="tl-item" style="cursor:pointer" onclick="openOv(2021)" id="panel_2021">
+      
+      <div class="tl-bg" style="background-image: url(assets/F1-2021.jpg)"></div>
+      
+      <div class="tl-year">
+        <p class="f2 heading--sanSerif">2021</p>
+      </div>
+  
+      <div class="tl-content">
+        <h1 class="f3 text--accent ttu">Vestibulum laoreet lorem</h1>
+        <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla sed felis. Morbi sed nisl et arcu.</p>
+      </div>
+  
+    </div>
+
+    <div class="tl-item" style="cursor:pointer" onclick="openOv(2022)" id="panel_2022">
+      
+      <div class="tl-bg" style="background-image: url(assets/Gear.Club-Unlimited-2-Tracks-Edition-Main-Art.jpg)"></div>
+      
+      <div class="tl-year">
+        <p class="f2 heading--sanSerif">2022</p>
+      </div>
+  
+      <div class="tl-content">
+        <h1 class="f3 text--accent ttu">Vestibulum laoreet lorem</h1>
+        <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla sed felis. Morbi sed nisl et arcu.</p>
+      </div>
+  
+    </div>
+
+  </section>
+
+
+<!-- Overlay Menus -->
+
+<!-- START -->
+<div id="hiddenPanel2017" class="overlay">  <!-- Don't forget to change the year in the Menu ID to be coherent -->
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeOv(2017)">&times;</a>
+    <div class="overlay-item" style="cursor: pointer;">
+      
+            <div class="overlay-bg" style="background-image: url(assets/Z-end/z-end.jpg)"></div>
+            
+            <div class="overlay-year">
+              <p class="overlay heading--sanSerif">2017</p>
+            </div>
+        
+            <div class="overlay-content">
+              <h1>Z-End</h1>
+            </div>
+    </div>
+    <div class="overlay-item" style="cursor: pointer;">
+      
+            <div class="overlay-bg" style="background-image: url(assets/Albion\ Online/Albion\ Online\ A.jpg)"></div>
+                
+            <div class="overlay-year">
+                <p class="overlay heading--sanSerif">Albion Online</p>
+            </div>
+            
+            <div class="overlay-content">
+                <h1>Albion Online</h1>
+            </div>
+    </div>
+    <div class="overlay-item" style="cursor: pointer;">
+      
+        <div class="overlay-bg" style="background-image: url(assets/The\ Architect\ Paris/TheArchitect01.jpg)"></div>
+            
+        <div class="overlay-year">
+            <p class="overlay heading--sanSerif"></p>
+        </div>
+        
+        <div class="overlay-content">
+            <h1>The Architect:Paris</h1>
+        </div>
+</div>
+</div>
+<!-- END -->
+<!-- START -->
+<div id="hiddenPanel2018" class="overlay">  <!-- Don't forget to change the year in the Menu ID to be coherent -->
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeOv(2018)">&times;</a>
+  <div class="overlay-item" style="cursor: pointer;">
+    
+          <div class="overlay-bg" style="background-image: url(assets/gear_club_unlimited_2.jpg)"></div>
+          
+          <div class="overlay-year">
+            <p class="overlay heading--sanSerif"></p>
+          </div>
+      
+          <div class="overlay-content">
+            <h1>Gear Club</h1>
+          </div>
+  </div>
+  <div class="overlay-item" style="cursor: pointer;">
+    
+          <div class="overlay-bg" style="background-image: url(assets/GearClubUnlimited2.jpg)"></div>
+              
+          <div class="overlay-year">
+              <p class="overlay heading--sanSerif"></p>
+          </div>
+          
+          <div class="overlay-content">
+              <h1>Gear Club Unlimited 2</h1>
+          </div>
+  </div>
+  <div class="overlay-item" style="cursor: pointer;">
+    
+    <div class="overlay-bg" style="background-image: url(assets/GearClubUnlimited2.jpg)"></div>
+        
+    <div class="overlay-year">
+        <p class="overlay heading--sanSerif"></p>
+    </div>
+    
+    <div class="overlay-content">
+        <h1>Gear Club Unlimited 2</h1>
+    </div>
+</div>
+<div class="overlay-item" style="cursor: pointer;">
+    
+  <div class="overlay-bg" style="background-image: url(assets/GearClubUnlimited2.jpg)"></div>
+      
+  <div class="overlay-year">
+      <p class="overlay heading--sanSerif"></p>
+  </div>
+  
+  <div class="overlay-content">
+      <h1>Gear Club Unlimited 2</h1>
+  </div>
+</div>
+</div>
+<!-- END -->
+<!-- START -->
+<div id="hiddenPanel2019" class="overlay">  <!-- Don't forget to change the year in the Menu ID to be coherent -->
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeOv(2019)">&times;</a>
+  <div class="overlay-item" style="cursor: pointer;">
+    
+          <div class="overlay-bg" style="background-image: url(assets/F1-2021.jpg)"></div>
+          
+          <div class="overlay-year">
+            <p class="overlay heading--sanSerif"></p>
+          </div>
+      
+          <div class="overlay-content">
+            <h1>F1 Mobile Racing</h1>
+          </div>
+  </div>
+  <div class="overlay-item" style="cursor: pointer;">
+    
+          <div class="overlay-bg" style="background-image: url(assets/ReussirCodeDeLaRouteFrenchHighwayCode_image1600w.jpg)"></div>
+              
+          <div class="overlay-year">
+              <p class="overlay heading--sanSerif"></p>
+          </div>
+          
+          <div class="overlay-content">
+              <h1>Réussir: Code de la route</h1>
+          </div>
+  </div>
+</div>
+<!-- END -->
+<!-- START -->
+<div id="hiddenPanel2020" class="overlay">  <!-- Don't forget to change the year in the Menu ID to be coherent -->
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeOv(2020)">&times;</a>
+  <div class="overlay-item" style="cursor: pointer;">
+    
+          <div class="overlay-bg" style="background-image: url(assets/MyUniverseMyBaby.jpg)"></div>
+          
+          <div class="overlay-year">
+            <p class="overlay heading--sanSerif"></p>
+          </div>
+      
+          <div class="overlay-content">
+            <h1>My Universe: My Baby</h1>
+          </div>
+  </div>
+  <div class="overlay-item" style="cursor: pointer;">
+    
+    <div class="overlay-bg" style="background-image: url(assets/MyUniverseMyBaby.jpg)"></div>
+    
+    <div class="overlay-year">
+      <p class="overlay heading--sanSerif"></p>
+    </div>
+
+    <div class="overlay-content">
+      <h1>My Universe: My Baby</h1>
+    </div>
+</div>
+</div>
+<!-- END -->
+<!-- START -->
+<div id="hiddenPanel2021" class="overlay">  <!-- Don't forget to change the year in the Menu ID to be coherent -->
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeOv(2021)">&times;</a>
+  <div class="overlay-item" style="cursor: pointer;">
+    
+          <div class="overlay-bg" style="background-image: url(assets/F1-2021.jpg)"></div>
+          
+          <div class="overlay-year">
+            <p class="overlay heading--sanSerif"></p>
+          </div>
+      
+          <div class="overlay-content">
+            <h1>F1 2021</h1>
+          </div>
+  </div>
+  <div class="overlay-item" style="cursor: pointer;">
+    
+          <div class="overlay-bg" style="background-image: url(assets/galop1a7.jpg)"></div>
+              
+          <div class="overlay-year">
+              <p class="overlay heading--sanSerif"></p>
+          </div>
+          
+          <div class="overlay-content">
+              <h1>Réussir: Galopes 1 à 7</h1>
+          </div>
+  </div>
+  <div class="overlay-item" style="cursor: pointer;">
+    
+    <div class="overlay-bg" style="background-image: url(assets/MyUniverseMyBaby.jpg)"></div>
+    
+    <div class="overlay-year">
+      <p class="overlay heading--sanSerif"></p>
+    </div>
+
+    <div class="overlay-content">
+      <h1>My Universe: My Baby</h1>
+    </div>
+</div>
+</div>
+<!-- END -->
+<!-- START -->
+<div id="hiddenPanel2022" class="overlay">  <!-- Don't forget to change the year in the Menu ID to be coherent -->
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeOv(2022)">&times;</a>
+  <div class="overlay-item" style="cursor: pointer;">
+    
+          <div class="overlay-bg" style="background-image: url(assets/Gear.Club-Unlimited-2-Tracks-Edition-Main-Art.jpg)"></div>
+          
+          <div class="overlay-year">
+            <p class="overlay heading--sanSerif"></p>
+          </div>
+      
+          <div class="overlay-content">
+            <h1>Gear Club Unlimited 2 : tracks Edition</h1>
+          </div>
+  </div>
+  <div class="overlay-item" style="cursor: pointer;">
+    
+    <div class="overlay-bg" style="background-image: url(assets/MyUniverseMyBaby.jpg)"></div>
+    
+    <div class="overlay-year">
+      <p class="overlay heading--sanSerif"></p>
+    </div>
+
+    <div class="overlay-content">
+      <h1>My Universe: My Baby</h1>
+    </div>
+</div>
+<div class="overlay-item" style="cursor: pointer;">
+    
+  <div class="overlay-bg" style="background-image: url(assets/MyUniverseMyBaby.jpg)"></div>
+  
+  <div class="overlay-year">
+    <p class="overlay heading--sanSerif"></p>
+  </div>
+
+  <div class="overlay-content">
+    <h1>My Universe: My Baby</h1>
+  </div>
+</div>
+</div>
+<!-- END -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="scripts/panel_timeline.js"></script>
+
+</body>
+</html>
