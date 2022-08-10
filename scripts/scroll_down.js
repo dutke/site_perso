@@ -1,17 +1,31 @@
-function reveal() {
-    var reveals = document.querySelectorAll(".reveal")
+var scrollableElement = document.body;
+var axis = "UP";
 
-    for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 150;
-    
-        if (elementTop < windowHeight - elementVisible) {
-          reveals[i].classList.add("active");
-        } else {
+    scrollableElement.addEventListener("wheel", checkScrollDirectionAndReveal);
+
+    function checkScrollDirectionAndReveal(event) {
+      var reveals = document.querySelectorAll(".reveal")
+      if (checkScrollDirectionIsUp(event)) {
+        axis = "UP";
+        console.log("UP");
+      } else {
+        axis = "DOWN";
+        console.log("Down");
+      }
+      for (var i = 0; i < reveals.length; i++) {
+
+        if (axis == "UP") {
           reveals[i].classList.remove("active");
+        }
+        else {
+          reveals[i].classList.add("active");
         }
       }
     }
     
-    window.addEventListener("scroll", reveal);
+    function checkScrollDirectionIsUp(event) {
+      if (event.wheelDelta) {
+        return event.wheelDelta > 0;
+      }
+      return event.deltaY < 0;
+    }
