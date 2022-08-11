@@ -5,14 +5,14 @@
     background-color: transparent;
     position: fixed; /* Set the navbar to fixed position */
     top: 85vh; /* Position the navbar at the bottom of the page */
-    width: 100%; /* Full width */
+    width: 100vw; /* Full width */
     border-top: 1px solid transparent;
     z-index: 1000;
   }
 
 .footer .icon-list {
-    margin-left: 75%;
-    width: 25%;
+    margin-left: 75vw;
+    width: 25vw;
     height: 15vh;
     display: flex;
     align-items: center;
@@ -77,3 +77,28 @@
   .icon-item:nth-child(3) a:hover:before { 
     background: var(--social-icon3); 
   }
+
+
+@media only screen and (max-width: 990px), (max-height: 600px) {
+
+  .footer .icon-list {
+    margin-left: 70vw;
+  }
+  .icon-link { 
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  .icon-link::before {
+    width: 4rem;
+    height: 4rem;
+  }
+
+}
+
+@media only screen and (max-width: 1220px) {
+
+  .footer .icon-list {
+    margin-left: 70vw;
+  }
+}

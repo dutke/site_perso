@@ -94,3 +94,10 @@ img.framed {
     -50px -50px 0 -40px var(--social-icon1),
     50px 50px 0 -40px var(--social-icon1);
 }
+
+@media  only screen and (max-height: 735px) {
+  .main_content .projects_btn {
+    width: 18vw;
+    height: 7vh;
+  }
+}
