@@ -1,7 +1,15 @@
+
+
 :root {
   --bg: transparent;  
-  --image-frame: #   
-  --color-icon: #fff;  
+  --image-frame: #0a2342;   
+  --color-icon: #fff;
+
+  --oxford-blue: #0a2342;
+  --mint-cream: #F4FFF8;
+  --light-salmon: #FAAA8D;
+
+
   --social-icon1: #e4405f;
   --social-icon2: #3b5999;
   --social-icon3: #0077B5;
@@ -28,7 +36,8 @@ section {
     height: 100%;
     max-height: 100%;
     max-width: 100%;
-    background: url("../assets/background.jpg") no-repeat center center fixed;
+    /* background: url("../assets/background.jpg") no-repeat center center fixed; */
+    background-color: var(--mint-cream);
     background-size: cover;
   }
 
@@ -48,7 +57,7 @@ section {
     height: 100%;
     position: absolute;
     filter: opacity(0.5);
-    background-color: black;
+    background-color: var(--light-salmon);
   }
   .main_content {
       /* margin-top: 20vh; */
@@ -58,15 +67,15 @@ section {
   }
   .main_content h1 {
 /* Add a top margin to avoid content overlay */
-    color: white;
-    font-size: 4rem;
+    color: var(--oxford-blue);
+    font-size: 4em;
     font-family: 'Barlow', sans-serif;
     font-weight: lighter;
   }
   .main_content h2 {
       margin-top: 5vh;
-      color: white;
-      font-size: 1.5rem;
+      color: var(--oxford-blue);
+      font-size: 1.5em;
       font-family: 'Barlow', sans-serif;
       font-weight: 5;
   }
@@ -78,22 +87,42 @@ section {
     justify-content: center;
     cursor: pointer;
     text-transform: uppercase;
-    background-color: #e4405f;
+    background-color: var(--oxford-blue);
     border: 1px solid transparent;
     color: white;
     font-family: 'Barlow', sans-serif;
     font-size: 1em;
     font-weight: lighter;
+    box-shadow: 
+      3px 3px 3px grey;
+
+    transition: all .2s ease-in-out;
 }
+
+.main_content .projects_btn:hover {
+  transform: scale(1.1);
+  background-color: #f2f2f2;
+  color: var(--oxford-blue);
+}
+
 
 img.framed {
   max-width: 25vh;
   z-index:1;
   justify-content: center;
   box-shadow:
-    -50px -50px 0 -40px var(--social-icon1),
-    50px 50px 0 -40px var(--social-icon1);
+    -50px -50px 0 -40px var(--oxford-blue),
+    50px 50px 0 -40px var(--oxford-blue);
+  transition: all .2s ease-in-out;
 }
+
+img.framed:hover {
+  transform: scale(1.1);
+  box-shadow: 
+    -55px -55px 0 -45px var(--oxford-blue),
+    55px 55px 0 -45px var(--oxford-blue);;
+}
+
 
 @media  only screen and (max-height: 735px) {
   .main_content .projects_btn {

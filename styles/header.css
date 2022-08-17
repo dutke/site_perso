@@ -19,14 +19,14 @@
     margin-right: 2.6%;
     float: right;
     display: block;
-    color: #f2f2f2;
+    color: var(--oxford-blue);
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
   }
 
   .header a:hover {
-    color : #f8a823;
+    color : #e4405f;
+    text-decoration: none;
   }
 
 .header .logo {

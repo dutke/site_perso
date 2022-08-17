@@ -29,7 +29,7 @@
     display: inline-flex;
     font-size: 3rem;  
     text-decoration: none;  
-    color: var(--color-icon);
+    color: var(--oxford-blue);
     width: 6rem;
     height: 6rem;   
     transition: .5s linear;
@@ -40,6 +40,7 @@
   
   .icon-link:hover {
     color: #fff;
+    text-decoration: none;
   }
   
   .icon-link i {
