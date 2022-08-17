@@ -1,9 +1,0 @@
-html, body {
-    width: 100vw;
-    background-color: blanchedalmond;
-    -webkit-text-size-adjust: 100vw !important;
-  } 
-  
-  section {
-    display: block;
-  }
