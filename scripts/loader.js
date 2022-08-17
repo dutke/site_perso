@@ -1,0 +1,10 @@
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+  
+    loader.classList.add("loader--hidden");
+  
+    loader.addEventListener("transitionend", () => {
+      loader.classList.remove("loader--hidden");
+      console.log('loading done');
+    });
+  });

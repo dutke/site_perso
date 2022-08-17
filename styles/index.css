@@ -30,20 +30,20 @@ section {
 
   .main {
     display: grid;
-    place-items: center;
+    padding-left: -10vw;
+    place-items: center start;
     position: relative;
     overflow: hidden; 
     height: 100%;
     max-height: 100%;
     max-width: 100%;
-    /* background: url("../assets/background.jpg") no-repeat center center fixed; */
-    background-color: var(--mint-cream);
+    background: url("../assets/wallpaper.jpg") no-repeat center center fixed;
     background-size: cover;
   }
 
   .main .column {
-    /* margin-left: 75%;
-    width: 25%; */
+    margin-left: 15vw;
+    /* width: 25%; */
     height: 15vh;
     display: flex;
     align-items: center;
@@ -56,8 +56,8 @@ section {
     width: 100%;
     height: 100%;
     position: absolute;
-    filter: opacity(0.5);
-    background-color: var(--light-salmon);
+    filter: opacity(0.6);
+    background-color: black;
   }
   .main_content {
       /* margin-top: 20vh; */
@@ -67,14 +67,14 @@ section {
   }
   .main_content h1 {
 /* Add a top margin to avoid content overlay */
-    color: var(--oxford-blue);
+    color: white;
     font-size: 4em;
     font-family: 'Barlow', sans-serif;
     font-weight: lighter;
   }
   .main_content h2 {
       margin-top: 5vh;
-      color: var(--oxford-blue);
+      color: white;
       font-size: 1.5em;
       font-family: 'Barlow', sans-serif;
       font-weight: 5;
@@ -87,21 +87,21 @@ section {
     justify-content: center;
     cursor: pointer;
     text-transform: uppercase;
-    background-color: var(--oxford-blue);
+    background: linear-gradient(90deg, var(--social-icon1) 0%, var(--social-icon4) 100%);
     border: 1px solid transparent;
     color: white;
     font-family: 'Barlow', sans-serif;
     font-size: 1em;
     font-weight: lighter;
     box-shadow: 
-      3px 3px 3px grey;
+      3px 3px 3px black;
 
     transition: all .2s ease-in-out;
 }
 
 .main_content .projects_btn:hover {
   transform: scale(1.1);
-  background-color: #f2f2f2;
+  background: #f2f2f2;
   color: var(--oxford-blue);
 }
 
@@ -111,16 +111,16 @@ img.framed {
   z-index:1;
   justify-content: center;
   box-shadow:
-    -50px -50px 0 -40px var(--oxford-blue),
-    50px 50px 0 -40px var(--oxford-blue);
+    -50px -50px 0 -40px var(--social-icon1),
+    50px 50px 0 -40px var(--social-icon4);
   transition: all .2s ease-in-out;
 }
 
 img.framed:hover {
   transform: scale(1.1);
   box-shadow: 
-    -55px -55px 0 -45px var(--oxford-blue),
-    55px 55px 0 -45px var(--oxford-blue);;
+    -55px -55px 0 -45px transparent,
+    55px 55px 0 -45px transparent;
 }
 
 
