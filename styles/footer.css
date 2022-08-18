@@ -3,11 +3,13 @@
 .footer {
     overflow: hidden;
     background-color: transparent;
-    position: fixed; /* Set the navbar to fixed position */
+    position: sticky; /* Set the navbar to fixed position */
+    bottom: 0;
     top: 85vh; /* Position the navbar at the bottom of the page */
     width: 100vw; /* Full width */
     border-top: 1px solid transparent;
-    z-index: 1000;
+    z-index: 0;
+    background: #070f02;
   }
 
 .footer .icon-list {

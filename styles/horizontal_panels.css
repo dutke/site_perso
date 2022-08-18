@@ -1,18 +1,10 @@
-body {
-    font-family: 'Source Sans Pro', Helvetica Neue, Helvetica, Arial, sans-serif;
+/* body {
+    font-family: 'Barlow', sans-serif;
     font-size: 16px;
     line-height: 1.75;
-  }
+  } */
 
 /* Timeline css */
-#timeline {
-    display: flex;
-    background-color: #0F0702;
-  }
-  #timeline:hover .tl-item {
-    width: 23.3333%;
-  }
-
   .tl-item {
     transform: translate3d(0, 0, 0);
     position: relative;
@@ -20,7 +12,7 @@ body {
     height: 100vh;
     min-height: 600px;
     color: #fff;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: width 0.5s ease;
   }
   .tl-item:before, .tl-item:after {
@@ -41,7 +33,7 @@ body {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 75%);
     z-index: 1;
     opacity: 0;
-    transform: translate3d(0, 0, 0) translateY(50%);
+    transform: translate3d(0, 0, 0) translateY(0%);
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
   .tl-item:hover {
@@ -73,7 +65,7 @@ body {
     opacity: 0;
   }
   .tl-content h1 {
-    font-family: 'Pathway Gothic One', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Barlow', sans-serif;
     text-transform: uppercase;
     color: #1779cf;
     font-size: 1.44rem;
@@ -212,7 +204,7 @@ body {
     opacity: 0;
   }
   .overlay-content h1 {
-    font-family: 'Pathway Gothic One', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Barlow', sans-serif;
     text-transform: uppercase;
     color: #e9ebec;
     font-size: 1.44rem;
@@ -229,7 +221,7 @@ body {
     border-bottom: 1px solid transparent;
   }
   .overlay-year p {
-    font-family: 'Pathway Gothic One', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 1.728rem;
     line-height: 0;
     z-index:4;
@@ -283,7 +275,7 @@ body {
 
 @media screen and (max-width: 500px) {
   .tl-year p {
-    font-family: 'Pathway Gothic One', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Barlow', sans-serif;
   font-size: 1em;
   }
 }
