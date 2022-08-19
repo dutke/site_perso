@@ -14,6 +14,7 @@
     color: #fff;
     /* overflow: hidden; */
     transition: width 0.5s ease;
+    border: solid 2px black;
   }
   .tl-item:before, .tl-item:after {
     transform: translate3d(0, 0, 0);
@@ -247,7 +248,7 @@
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #eaa92f;
+    color: var(--social-icon1);
     display: block;
     transition: 0.3s;
     /* border: 2px solid #eaa92f;
@@ -255,7 +256,7 @@
   }
   /* overlay links color on mouse over*/
   .overlay a:hover, .overlay a:focus {
-    color: #dd690b;
+    color: var(--social-icon1);
   }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
