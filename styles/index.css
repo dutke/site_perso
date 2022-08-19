@@ -1,4 +1,11 @@
+@import "header.css";
+@import "footer.css";
+@import "horizontal_panels.css";
+@import "reveal.css";
+@import "timeline.css";
 
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css";
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css";
 
 :root {
   --bg: transparent;  
@@ -29,7 +36,7 @@ html, body {
   padding-left: -10vw;
   place-items: center start;
   overflow: hidden; 
-  height: 90vh;
+  height: 95vh;
   width: 100vw;
   max-height: 100vh;
   max-width: 100vw;
@@ -47,11 +54,21 @@ html, body {
   position: sticky;
   bottom: 0;
   z-index: 2;
-  scroll-margin-top: -90vh;
+  scroll-margin-top: -95vh;
+  border-bottom: solid var(--social-icon1) 2px;
 }
 
 #PROJECTS:hover .tl-item {
   width: 23.3333%;
+}
+
+#FORMATION {
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  background-color:#1D1D1D;
+  scroll-margin-top: -100vh;
+  border-bottom: solid var(--social-icon1) 2px;
 }
 
 .arrow{
@@ -64,8 +81,8 @@ html, body {
   display: block;
   width: 20px;
   height: 20px;
-  border-bottom: 5px solid var(--social-icon3);
-  border-right: 5px solid var(--social-icon3);
+  border-bottom: 5px solid var(--social-icon1);
+  border-right: 5px solid var(--social-icon4);
   transform: rotate(45deg);
   margin: -10px;
   animation: animate 2s infinite;

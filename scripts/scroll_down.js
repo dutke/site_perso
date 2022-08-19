@@ -7,10 +7,8 @@ var axis = "UP";
       var reveals = document.querySelectorAll(".reveal")
       if (checkScrollDirectionIsUp(event)) {
         axis = "UP";
-        console.log("UP");
       } else {
         axis = "DOWN";
-        console.log("Down");
       }
       for (var i = 0; i < reveals.length; i++) {
 

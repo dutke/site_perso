@@ -8,8 +8,8 @@
     top: 85vh; /* Position the navbar at the bottom of the page */
     width: 100vw; /* Full width */
     border-top: 1px solid transparent;
-    z-index: 0;
-    background: #070f02;
+    z-index: 11;
+    background: black;
   }
 
 .footer .icon-list {
@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: center;  
     background: transparent;
-    z-index: 2;
+    z-index: 1000;
   }
   
   .icon-item {
