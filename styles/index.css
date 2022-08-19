@@ -55,7 +55,6 @@ html, body {
   position: sticky;
   bottom: 0;
   z-index: 2;
-  scroll-margin-top: -95vh;
   border-bottom: solid var(--social-icon1) 2px;
 }
 
@@ -68,7 +67,6 @@ html, body {
   bottom: 0;
   z-index: 1;
   background-color:#111111;
-  scroll-margin-top: -100vh;
   border-bottom: solid var(--social-icon1) 2px;
 }
 
