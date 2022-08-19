@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #0F0702;
+  background: #111111;
   transition: opacity 0.75s, visibility 0.75s;
   z-index: 100;
 }
@@ -23,7 +23,7 @@
   width: 75px;
   height: 75px;
   border: 15px solid #dddddd;
-  border-top-color: #009578;
+  border-top-color: var(--social-icon1);
   border-radius: 50%;
   animation: loading 0.75s ease infinite;
 }
