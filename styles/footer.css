@@ -73,7 +73,7 @@
   }
   
   .icon-item:nth-child(1) a:hover:before { 
-    background: var(--social-icon1); 
+    background: var(--social-icon3); 
   }
   
   .icon-item:nth-child(2) a:hover:before { 
@@ -81,7 +81,7 @@
   }
   
   .icon-item:nth-child(3) a:hover:before { 
-    background: var(--social-icon3); 
+    background: var(--social-icon1); 
   }
 
 .footer .f-column {

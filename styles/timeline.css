@@ -85,4 +85,14 @@
     .entries {
       max-width: 100vw;
     }
+    .entries .entry:not(:first-child) {
+      margin-top: -100px;
+    }
+
   }
+
+@media only screen and (max-height: 900px) {
+  .entries .entry:not(:first-child) {
+    margin-top: -100px;
+  }
+}

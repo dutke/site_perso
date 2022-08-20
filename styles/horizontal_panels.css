@@ -15,6 +15,7 @@
     /* overflow: hidden; */
     transition: width 0.5s ease;
     border: solid 2px black;
+    font-family: 'Barlow', sans-serif;
   }
   .tl-item:before, .tl-item:after {
     transform: translate3d(0, 0, 0);
@@ -62,7 +63,7 @@
     z-index: 1;
     text-align: center;
     margin: 0 1.618em;
-    top: 55%;
+    top: 70%;
     opacity: 0;
   }
   .tl-content h1 {
@@ -73,6 +74,7 @@
     font-weight: normal;
   }
   .tl-year {
+    font-family: 'Barlow', sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -83,9 +85,8 @@
   }
 
   .tl-year p {
-    font-family: 'Pathway Gothic One', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 1.728rem;
-    line-height: 0;
   }
   .tl-bg {
     transform: translate3d(0, 0, 0);
@@ -119,8 +120,8 @@
   width: 70% !important;
 }
 
-#hiddenPanel4.overlay-item {
-    width: 50%;
+#hiddenPanel4 .overlay-item {
+    width: 100% !important;
   }
 
 
@@ -196,16 +197,25 @@
     z-index: 3;
     text-align: center;
     margin: 0 1.618em;
-    top: 55%;
+    top: 70%;
     opacity: 0;
   }
   .overlay-content h1 {
     font-family: 'Barlow', sans-serif;
     text-transform: uppercase;
     color: #e9ebec;
-    font-size: 1.44rem;
-    font-weight: normal;
+    font-size: 1.8rem;
+    font-weight: lighter;
     z-index:4;
+    color: #1779cf;
+  }
+  .overlay-content p{
+    font-weight: lighter;
+    margin-top: 5%;
+  }
+  .overlay-content p a {
+    margin-top: 5vh;
+    font-size: 1.2rem;
   }
   .overlay-year {
     position: absolute;
