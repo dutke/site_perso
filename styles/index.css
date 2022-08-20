@@ -30,6 +30,9 @@ html, body {
   scroll-behavior: smooth;
 } 
 
+.main {
+  width:100vw;
+}
 
 #ABOUT {
   display: grid;
@@ -50,6 +53,7 @@ html, body {
 }
 
 #PROJECTS {
+  width: 100vw;
   display: flex;
   background-color: #0F0702;
   position: sticky;
@@ -63,6 +67,7 @@ html, body {
 }
 
 #FORMATION {
+  width: 100vw;
   position: sticky;
   bottom: 0;
   z-index: 1;

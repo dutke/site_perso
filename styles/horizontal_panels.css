@@ -108,16 +108,19 @@
   width: 50%;
 }
 #hiddenPanel1 .overlay-item:hover {
-    width: 60%;
-  }
-#hiddenPanel2 .overlay-item {
     width: 50%;
   }
 #hiddenPanel2 .overlay-item {
     width: 50%;
+  }
+#hiddenPanel2 .overlay-item {
+    width: 50%;
+  }
+#hiddenPanel3 .overlay-item {
+    width: 100% !important;
   }
 #hiddenPanel3 .overlay-item:hover {
-  width: 70% !important;
+  width: 100% !important;
 }
 
 #hiddenPanel4 .overlay-item {
@@ -147,6 +150,7 @@
     width: 33%;
     height: 100vh;
     min-height: 600px;
+    align-items: center;
     color: #fff;
     overflow: hidden;
     transition: width 0.3s ease;
@@ -214,7 +218,6 @@
     margin-top: 5%;
   }
   .overlay-content p a {
-    margin-top: 5vh;
     font-size: 1.2rem;
   }
   .overlay-year {
@@ -250,7 +253,7 @@
     top: 12vh;
     right: 10%;
     font-size: 60px;
-    z-index:4;
+    z-index: 10000;
   }
 
   /* overlay links color */
