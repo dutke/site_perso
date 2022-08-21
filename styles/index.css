@@ -44,6 +44,7 @@ html, body {
   width: 100vw;
   max-height: 100vh;
   max-width: 100vw;
+  background-color: #111111;
   background: url("../assets/elec_bg.jpg") no-repeat center center fixed;
   background-size: cover;
   position: sticky;
